@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="b247-jsbsim-cnf.xml"> -->
+<PropertyList include="b247-yasim-cnf.xml">
+
+  <sim>
+    <description>Boeing 247</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+

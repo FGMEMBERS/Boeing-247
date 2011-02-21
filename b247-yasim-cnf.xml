@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+Boeing 247
+February 2011 BARANGER Emmanuel
+************************************************************************
+-->
+
+<PropertyList include="b247-base.xml">
+
+  <sim>
+
+    <description>Boeing 247 (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>b247-yasim</aero>
+
+    <startup>
+      <splash-texture>Aircraft/Boeing-247/Splash/b247-splash.png</splash-texture>
+    </startup>
+
+    <model>
+      <path>Aircraft/Boeing-247/Models/b247.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+  </sim>
+    
+</PropertyList>
