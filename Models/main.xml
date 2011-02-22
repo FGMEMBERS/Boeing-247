@@ -41,6 +41,7 @@
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
@@ -68,6 +69,7 @@
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
     <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
     <object-name>roueA</object-name>
     <object-name>heliceG</object-name>
     <object-name>heliceD</object-name>
@@ -133,6 +135,12 @@
     <object-name>propblurD</object-name>
     <object-name>propdiscD</object-name>
   </animation>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/Boeing-247/Models/shadow.xml</path>
+  </model>
 
   <!-- Effets sur le sol -->
   <!-- Roue gauche -->
