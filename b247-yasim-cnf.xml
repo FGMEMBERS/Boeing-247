@@ -1,16 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-************************************************************************
-Boeing 247
-February 2011 BARANGER Emmanuel
-************************************************************************
--->
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList include="b247-base.xml">
 
   <sim>
 
     <description>Boeing 247 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>b247-yasim</aero>
 

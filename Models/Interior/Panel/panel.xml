@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -25,9 +25,9 @@
   <model>
     <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.024 </x-m>
-      <y-m>  0.040 </y-m>
-      <z-m>  0.313 </z-m>
+      <x-m> 0.024 </x-m>
+      <y-m> 0.040 </y-m>
+      <z-m> 0.313 </z-m>
     </offsets>
   </model>
 
@@ -46,7 +46,7 @@
     <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
       <x-m>  0.017 </x-m>
-      <y-m> -0.288 </y-m>
+      <y-m> -0.290 </y-m>
       <z-m>  0.299 </z-m>
     </offsets>
   </model>
@@ -55,9 +55,9 @@
   <model>
     <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.016 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.198 </z-m>
+      <x-m> 0.016 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.198 </z-m>
     </offsets>
   </model>
 
@@ -65,11 +65,29 @@
   <model>
     <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m>  0.017 </x-m>
-      <y-m>  0.096 </y-m>
-      <z-m>  0.198 </z-m>
+      <x-m> 0.017 </x-m>
+      <y-m> 0.096 </y-m>
+      <z-m> 0.198 </z-m>
     </offsets>
   </model>
 
+  <!-- LIGHT SWITCH -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/Switch/land-lights.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.460 </y-m>
+      <z-m>  0.256 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/Panel/Instruments/Switch/instr-lights.xml</path>
+    <offsets>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.426 </y-m>
+      <z-m>  0.256 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

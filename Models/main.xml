@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -36,7 +36,9 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-
+    <object-name>porte</object-name>
+    <object-name>cargo</object-name>
+    
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
@@ -64,7 +66,9 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-
+    <object-name>porte</object-name>
+    <object-name>cargo</object-name>
+    
     <object-name>axeG</object-name>
     <object-name>roueG</object-name>
     <object-name>axeD</object-name>
@@ -78,39 +82,23 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>aileronG</object-name>
@@ -118,6 +106,24 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
+    <object-name>porte</object-name>
+    <object-name>cargo</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Effects/model-combined-deferred</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>ailes2</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>porte</object-name>
+    <object-name>cargo</object-name>
   </effect>
 
   <animation>
@@ -136,10 +142,27 @@
     <object-name>propdiscD</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitres</object-name>
+    <object-name>propblurG</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurD</object-name>
+    <object-name>propdiscD</object-name>
+  </effect>
+
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Boeing-247/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0 </x-m>
+      <y-m>  0 </y-m>
+      <z-m> -2 </z-m>
+    </offsets>
   </model>
 
   <!-- Effets sur le sol -->
@@ -176,48 +199,44 @@
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Boeing-247/Models/Effects/cranking/cranking.xml</path>
     <offsets>
       <x-m> -5.641 </x-m>
       <y-m> -2.844 </y-m>
       <z-m> -0.797 </z-m>
-      <roll-deg>      0 </roll-deg>
       <pitch-deg>    35 </pitch-deg>
       <heading-deg> -10 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Boeing-247/Models/Effects/cranking/cranking.xml</path>
     <offsets>
       <x-m> -5.641 </x-m>
       <y-m> -1.874 </y-m>
       <z-m> -0.797 </z-m>
-      <roll-deg>     0 </roll-deg>
       <pitch-deg>   35 </pitch-deg>
       <heading-deg> 10 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Boeing-247/Models/Effects/cranking/cranking.xml</path>
     <offsets>
       <x-m> -5.641 </x-m>
       <y-m>  2.844 </y-m>
       <z-m> -0.797 </z-m>
-      <roll-deg>     0 </roll-deg>
       <pitch-deg>   35 </pitch-deg>
       <heading-deg> 10 </heading-deg>
     </offsets>
   </model>
 
   <model>
-    <path>Aircraft/Douglas-Dc3/Models/Effects/cranking/cranking.xml</path>
+    <path>Aircraft/Boeing-247/Models/Effects/cranking/cranking.xml</path>
     <offsets>
       <x-m> -5.641 </x-m>
       <y-m>  1.874 </y-m>
       <z-m> -0.797 </z-m>
-      <roll-deg>     0 </roll-deg>
       <pitch-deg>   35 </pitch-deg>
       <heading-deg> 10 </heading-deg>
     </offsets>
@@ -274,6 +293,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteG</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -338,6 +363,12 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceCompleteD</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value> 5 </value>
+      </greater-than>
+    </condition>
     <property>engines/engine[1]/rpm</property>
     <factor> 1 </factor>
     <center>
@@ -357,7 +388,7 @@
     <type>rotate</type>
     <object-name>direction</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> -25 </factor>
+    <factor> -15 </factor>
     <center>
      <x-m> 6.573 </x-m>
      <y-m> 0.000 </y-m>
@@ -375,7 +406,7 @@
     <type>rotate</type>
     <object-name>profondeur</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 30 </factor>
+    <factor> 15 </factor>
     <center>
      <x-m> 6.462 </x-m>
      <y-m> 0.000 </y-m>
@@ -520,5 +551,144 @@
     </axis>
   </animation>
 
-</PropertyList>
+  <!-- Les portes -->
+  <animation>
+    <type>pick</type>
+    <object-name>porte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>porte</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 170 </factor>
+    <center>
+      <x-m> 0.47499 </x-m>
+      <y-m> 0.79946 </y-m>
+      <z-m> 0.03961 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
 
+  <animation>
+    <type>pick</type>
+    <object-name>cargo</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.cargo.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>cargo</object-name>
+    <property>sim/model/door-positions/cargo/position-norm</property>
+    <factor> -120 </factor>
+    <center>
+      <x-m>  1.65606 </x-m>
+      <y-m> -0.72757 </y-m>
+      <z-m>  0.28488 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Ajout des effets lumineux -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 6.47394 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 3.42696 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> -3.87103 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.07958 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  -2.60579 </x-m>
+      <y-m> -11.33072 </y-m>
+      <z-m>  -0.04201 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  -2.59806 </x-m>
+      <y-m> -11.33072 </y-m>
+      <z-m>  -0.04200 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m> -2.60579 </x-m>
+      <y-m> 11.33072 </y-m>
+      <z-m> -0.04201 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m> -2.59806 </x-m>
+      <y-m> 11.33072 </y-m>
+      <z-m> -0.04200 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Light cone left -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -3.86405 </x-m>
+      <y-m>       -4.92558 </y-m>
+      <z-m>       -0.31243 </z-m>
+      <pitch-deg> -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Light cone right -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m>       -3.86405 </x-m>
+      <y-m>        4.92558 </y-m>
+      <z-m>       -0.31243 </z-m>
+      <pitch-deg> -7.500 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

@@ -1,30 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
-************************************************************************
-Boeing 247 D
-February 2011 BARANGER Emmanuel
-************************************************************************
--->
+<?xml version="1.0" encoding="ISO-8859-1"?> 
 
 <PropertyList include="b247-base.xml">
+  
+<sim>
+  
+<description>Boeing 247 D (YASim)</description>
+<author>BARANGER Emmanuel (3D/FDM)</author>
+<flight-model>yasim</flight-model>
+<aero>b247-yasim</aero>
 
-  <sim>
+<startup>
+  <splash-texture>Aircraft/Boeing-247/Splash/b247D-splash.png</splash-texture>
+</startup>
 
-    <description>Boeing 247 D (YASim)</description>
-    <flight-model>yasim</flight-model>
-    <aero>b247-yasim</aero>
+<model>
+  <path>Aircraft/Boeing-247/Models/b247D.xml</path>
+  <livery>
+    <file type="string">default</file>
+  </livery>
+</model>
 
-    <startup>
-      <splash-texture>Aircraft/Boeing-247/Splash/b247D-splash.png</splash-texture>
-    </startup>
+</sim>
 
-    <model>
-      <path>Aircraft/Boeing-247/Models/b247D.xml</path>
-      <livery>
-        <file type="string">default</file>
-      </livery>
-    </model>
-
-  </sim>
-    
 </PropertyList>
