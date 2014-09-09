@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/main.xml</path>
+  </model>
+
+  <!-- Moteurs/Cockpit -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/part.xml</path>
+  </model>
+
+</PropertyList>
