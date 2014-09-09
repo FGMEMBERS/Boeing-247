@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>portecabine</object-name>
+    <object-name>cloison</object-name>
+    <object-name>planchet</object-name>
+    <object-name>intporte</object-name>
+    <object-name>intcargo</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+  </effect>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -5.034 </x-m>
+      <y-m> -0.370 </y-m>
+      <z-m>  0.201 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -5.346 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.183 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/all-seats.xml</path>
+  </model>
+
+  <!-- Animation des portes -->
+  <animation>
+    <type>pick</type>
+    <object-name>intporte</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intporte</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 170 </factor>
+    <center>
+      <x-m> 0.47499 </x-m>
+      <y-m> 0.79946 </y-m>
+      <z-m> 0.03961 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>intcargo</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.cargo.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>intcargo</object-name>
+    <property>sim/model/door-positions/cargo/position-norm</property>
+    <factor> -120 </factor>
+    <center>
+      <x-m>  1.65606 </x-m>
+      <y-m> -0.72757 </y-m>
+      <z-m>  0.28488 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

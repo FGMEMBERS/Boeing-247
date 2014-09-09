@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<!-- <PropertyList include="b247-jsbsim-cnf.xml"> -->
+<PropertyList include="b247-yasim-cnf.xml">
+
+  <sim>
+    
+    <description>Boeing 247 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    
+    <rating>
+      <FDM type="int">     2 </FDM>
+      <systems type="int"> 0 </systems>
+      <cockpit type="int"> 0 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+
+    <tags>
+        <tag>transport</tag>
+        <tag>boeing</tag>
+        <tag>piston</tag>
+        <tag>variable-pitch</tag>
+        <tag>twin-engine</tag>
+        <tag>retractable-gear</tag>
+        <tag>tail-dragger</tag>
+        <tag>golden-age</tag>
+        <tag>1930s</tag>
+    </tags>
+  </sim>
+
+</PropertyList>

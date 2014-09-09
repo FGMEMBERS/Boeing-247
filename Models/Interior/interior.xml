@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/interiormain.xml</path>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/intpart.xml</path>
+  </model>
+
+</PropertyList>
+

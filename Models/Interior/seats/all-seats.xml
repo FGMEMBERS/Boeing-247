@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Les sièges -->
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/pilot-seat.xml</path>
+    <offsets>
+      <x-m> -4.670 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Copilote -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/pilot-seat.xml</path>
+    <offsets>
+      <x-m> -4.670 </x-m>
+      <y-m>  0.400 </y-m>
+      <z-m>  0.090 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Passagers -->
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -3.700 </x-m>
+      <y-m> -0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -3.700 </x-m>
+      <y-m>  0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -2.700 </x-m>
+      <y-m> -0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -2.700 </x-m>
+      <y-m>  0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m> -0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -1.600 </x-m>
+      <y-m>  0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -0.600 </x-m>
+      <y-m> -0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m> -0.600 </x-m>
+      <y-m>  0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.400 </x-m>
+      <y-m> -0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Boeing-247/Models/Interior/seats/seat.xml</path>
+    <offsets>
+      <x-m>  0.400 </x-m>
+      <y-m>  0.482 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
