@@ -7,13 +7,13 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>pistons</object-name>
-    <object-name>bougies</object-name>
-    <object-name>anneau</object-name>
-    <object-name>cames</object-name>
-    <object-name>ecrous</object-name>
-    <object-name>caches</object-name>
     <object-name>cylindres</object-name>
+    <object-name>caches</object-name>
+    <object-name>cames</object-name>
+    <object-name>anneau</object-name>
+    <object-name>ecrous</object-name>
     <object-name>souflets</object-name>    
+    <object-name>bougies</object-name>
   </animation>
 
 </PropertyList>
