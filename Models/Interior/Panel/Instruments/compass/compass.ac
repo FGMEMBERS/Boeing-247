@@ -10,7 +10,7 @@ data 7
 Compass
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 32
 -0.004883 0.025389 0.013841
 -0.002021 0.025389 -0.000427
@@ -165,7 +165,7 @@ data 3
 box
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 8
 -0.002979 -0.009009 0.03746
 -0.002979 0.030901 0.03746
@@ -219,7 +219,7 @@ data 4
 face
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 33
 0.000593 -0.011914 -0.041751
 0.000593 -0.032163 -0.028738
@@ -481,7 +481,7 @@ data 4
 fond
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 97
 0.002128 -0.007795 -0.038451
 0.002128 -0.015266 -0.036246
@@ -1037,7 +1037,7 @@ data 4
 knob
 texture "compass.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 31
 0.011466 -0.058433 0.007841
 0.011466 -0.055353 0.005602
@@ -1272,7 +1272,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.002186 -0.000223 0.000053
 0.003391 0.035246 -0.023647

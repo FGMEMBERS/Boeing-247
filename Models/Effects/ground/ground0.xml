@@ -10,10 +10,12 @@
 
     <condition>
       <and>
-        <property>/gear/gear[0]/wow</property>
+        <!-- /gear/gear[0]/wow -->
+        <property>sim/multiplay/generic/float[10]</property>
         <greater-than>
-          <property>/gear/gear[0]/rollspeed-ms</property>
-          <value>5</value>
+          <!-- /gear/gear[0]/rollspeed-ms -->
+          <property>sim/multiplay/generic/float[13]</property>
+          <value>15</value>
         </greater-than>
       </and>
     </condition>
@@ -64,14 +66,16 @@
       </start>
       <end>
         <color>
-          <red><value>   1.000 </value></red>
-          <green><value> 1.000 </value></green>
-          <blue><value>  1.000 </value></blue>
-          <alpha><value> 0.020 </value></alpha>
+          <red><value>   1.00 </value></red>
+          <green><value> 1.00 </value></green>
+          <blue><value>  1.00 </value></blue>
+          <alpha><value> 0.02 </value></alpha>
         </color>
         <size><value> 3 </value></size>
       </end>
-      <life-sec><value> 0.5 </value></life-sec>
+      <life-sec>
+        <value> 0.5 </value>
+      </life-sec>
       <mass-kg>  0.025 </mass-kg>
       <radius-m> 0.175 </radius-m>
     </particle>
