@@ -9,7 +9,7 @@ data 8
 acoudoir
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 20
 -0.219186 0.116953 -0.21823
 0.066356 0.098574 -0.21823
@@ -148,7 +148,7 @@ data 7
 coussin
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 45
 0.105765 0.32357 -0.213501
 0.046261 -0.0139 -0.213501
@@ -544,7 +544,7 @@ data 4
 fond
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 44
 -0.332834 -0.032646 0.186493
 -0.312698 -0.034378 0.214829
@@ -879,7 +879,7 @@ data 9
 structure
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 146
 0.196193 0.33847 -0.228577
 0.187174 0.340021 -0.224786

@@ -10,7 +10,7 @@ data 4
 face
 texture "vsi.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 16
 0.000754 0.030739 -0.030737
 0.000754 0.016635 -0.040162
@@ -86,7 +86,7 @@ data 4
 fond
 texture "vsi.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 129
 -0.001567 0.008795 -0.04428
 -0.001567 0.017298 -0.041711
@@ -898,7 +898,7 @@ data 6
 needle
 texture "vsi.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 116
 0.002131 -0.000742 0.003811
 0.002131 0.000742 0.003811
@@ -1640,7 +1640,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.00207 0 -0
 0.003321 0.036861 -0.024628

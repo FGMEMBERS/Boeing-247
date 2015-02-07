@@ -10,7 +10,7 @@ data 11
 alt-Needle1
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 14
 0.002624 0.034997 0.000763
 0.002624 0.03726 -0.000283
@@ -104,7 +104,7 @@ data 11
 alt-Needle2
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 14
 0.003233 0.012573 -0.002491
 0.003233 0.019596 -0.000349
@@ -198,7 +198,7 @@ data 11
 alt-Needle3
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 18
 0.001833 0.020044 0.00027
 0.001833 0.037271 -0.000283
@@ -317,7 +317,7 @@ data 4
 face
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0.001226 -0.00007 -0.044419
 0.001226 0.016201 -0.041037
@@ -441,7 +441,7 @@ data 4
 fond
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 128
 0.003608 -0.000129 -0.041061
 0.003608 -0.00819 -0.040271
@@ -1252,7 +1252,7 @@ data 4
 knob
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 20
 -0.000651 -0.043319 0.046973
 -0.000651 -0.047881 0.045563
@@ -1384,7 +1384,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.001823 -0 0
 0.003047 0.03603 -0.024073

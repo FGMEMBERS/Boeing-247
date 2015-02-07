@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+  <sim include="Systems/views.xml">
  
     <description>Boeing 247 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>
@@ -15,32 +15,53 @@
       <path>Aircraft/Boeing-247/Sounds/b247-sound.xml</path>
     </sound>
 
+    <startup>
+      <splash-texture>Aircraft/Boeing-247/b247-splash.png</splash-texture>
+    </startup>
+    
+    <model>
+      <path>Aircraft/Boeing-247/Models/b247.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <b247D type="bool">false</b247D>
+    </model>
+    
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="8"> 0 </int>                                            <!--  8 Noze type -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m">  0 </float>                <!-- 11 altitude for MP shadow -->
-        <float n="3" alias="/position/altitude-ft">  0 </float>                <!-- 11 altitude for MP shadow -->
-        <float n="6" alias="/engines/engine[0]/n2" />
-        <float n="7" alias="/engines/engine[1]/n2" />
-        <float n="8" alias="/controls/engines/engine[0]/throttle" />
-        <float n="9" alias="/controls/engines/engine[1]/throttle" />
-        <string n="0" type="string" />
-        <string n="9" type="string" />                                        <!-- string[9] reserved for bombable mode -->
+        <int   n="0"  type="int">  0 </int>                                          <!-- 0 immat -->
+        <int   n="1"  type="int">  0 </int>                                          <!-- 1 immat -->
+        <int   n="2"  type="int">  0 </int>                                          <!-- 2 immat -->
+        <int   n="3"  type="int">  0 </int>                                          <!-- 3 immat -->
+        <int   n="4"  type="int">  0 </int>                                          <!-- 4 immat -->
+        <int   n="5"  type="int">  0 </int>                                          <!-- 5 immat -->
+        <int type="bool" n="6" alias="/sim/model/b247D">false</int>                  <!-- 6 Mode 247 / 247D -->
+        <int   n="7"  type="int">  0 </int>                                          <!-- 7 color -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>      <!-- 8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>          <!-- 9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                       <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                      <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/sim/model/door-positions/leftbagage/position-norm"/>
+        <float n="5"  alias="/sim/model/door-positions/rightbagage/position-norm"/>
+        <float n="6"  alias="/engines/engine[0]/rpm"/>
+        <float n="7"  alias="/engines/engine[0]/cranking"/>
+        <float n="8"  alias="/engines/engine[1]/rpm"/>
+        <float n="9"  alias="/engines/engine[1]/cranking"/>
+        <float n="10" alias="/gear/gear[0]/wow/"/>
+        <float n="11" alias="/gear/gear[1]/wow/"/>
+        <float n="12" alias="/gear/gear[2]/wow/"/>
+        <float n="13" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="14" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="15" alias="/gear/gear[2]/rollspeed-ms"/>
+        <!-- For Bombable -->
+        <int   n="10" type="int" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
     </multiplay>
-
+    
     <flaps>
       <setting>0.00</setting>
       <setting>0.25</setting>
@@ -49,54 +70,30 @@
       <setting>1.00</setting>
     </flaps>
 
-    <help>
-      <title>Douglas b247</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close crew door</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close passenger door</desc>
-      </key>
-      <key>
-        <name>E</name>
-        <desc>Open/Close cargo door</desc>
-      </key>
-    </help>
+    <tags>
+      <tag>transport</tag>
+      <tag>boeing</tag>
+      <tag>piston</tag>
+      <tag>variable-pitch</tag>
+      <tag>twin-engine</tag>
+      <tag>retractable-gear</tag>
+      <tag>tail-dragger</tag>
+      <tag>golden-age</tag>
+      <tag>1930s</tag>
+    </tags>
+    
+    <help include="Systems/help.xml"/>
 
     <menubar include="Dialogs/b247-menu.xml"/>
 
   </sim>
 
-  <controls>
-    <engines>
-      <engine n="0">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="1">
-        <magnetos>0</magnetos>
-      </engine>
-    </engines>
-  </controls>
+  <input include="Systems/b247-keyboard.xml"/>
+  
+  <controls include="Systems/controls.xml"/>
 
-  <engines>
-    <engine n="0">
-      <engine-num type="int">0</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
-    </engine>
-    <engine n="1">
-      <engine-num type="int">1</engine-num>
-      <rpm>500</rpm>
-      <running>false</running>
-    </engine>
-  </engines>
+  <engines include="Systems/engines.xml"/>
 
-  <input>
-    <keyboard include="Nasal/b247-keyboard.xml"/>
-  </input>
- 
   <nasal>
     <doors>
       <file>Aircraft/Boeing-247/Nasal/doors.nas</file>
@@ -108,4 +105,3 @@
   </nasal>
 
 </PropertyList>
-

@@ -13,8 +13,14 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Boeing 247D ON-Off</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/b247D</property>
+        </binding>
+      </item>
     </menu>
   </default>
 
 </PropertyList>
-

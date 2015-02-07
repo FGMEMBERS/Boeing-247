@@ -15,12 +15,12 @@
 
   <model>
     <name>Bloc1</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
   </model>
 
   <model>
     <name>Bloc2</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 40 </roll-deg>
     </offsets>
@@ -28,7 +28,7 @@
 
   <model>
     <name>Bloc3</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 80 </roll-deg>
     </offsets>
@@ -36,7 +36,7 @@
 
   <model>
     <name>Bloc4</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 120 </roll-deg>
     </offsets>
@@ -44,7 +44,7 @@
 
   <model>
     <name>Bloc5</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 160 </roll-deg>
     </offsets>
@@ -52,7 +52,7 @@
 
   <model>
     <name>Bloc6</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 200 </roll-deg>
     </offsets>
@@ -60,28 +60,28 @@
 
   <model>
     <name>Bloc7</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 240 </roll-deg>
     </offsets>
   </model>
 
   <model>
-    <name>Bloc8</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <name>Bloc7</name>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 280 </roll-deg>
     </offsets>
   </model>
-
+  
   <model>
-    <name>Bloc9</name>
-    <path>Aircraft/Boeing-247/Models/r1340/blocpiston.xml</path>
+    <name>Bloc7</name>
+    <path>Aircraft/Boeing-247/Models/engines/blocpiston.xml</path>
     <offsets>
       <roll-deg> 320 </roll-deg>
     </offsets>
   </model>
-
+  
   <animation>
     <name>HighPoly</name>
     <object-name>Bloc1</object-name>
@@ -91,8 +91,9 @@
     <object-name>Bloc5</object-name>
     <object-name>Bloc6</object-name>
     <object-name>Bloc7</object-name>
-    <object-name>Bloc8</object-name>
-    <object-name>Bloc9</object-name>
+    <object-name>centre</object-name>
+    <object-name>axe1</object-name>
+    <object-name>axe2</object-name>
   </animation>
 
   <animation>
@@ -102,16 +103,15 @@
 
   <animation>
     <type>range</type>
-    <object-name>HighPoly</object-name>
-    <min-m>0</min-m>
-    <max-property>/sim/rendering/static-lod/detailed</max-property>
+    <object-name>LowPoly</object-name>
+    <min-property>sim/rendering/static-lod/detailed</min-property>
   </animation>
 
   <animation>
     <type>range</type>
-    <object-name>LowPoly</object-name>
-    <min-property>/sim/rendering/static-lod/detailed</min-property>
-    <max-property>/sim/rendering/static-lod/bare</max-property>
+    <object-name>HighPoly</object-name>
+    <min-m>0</min-m>
+    <max-property>sim/rendering/static-lod/detailed</max-property>
   </animation>
 
 </PropertyList>
